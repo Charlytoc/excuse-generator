@@ -38,3 +38,4 @@ function excusa() {
   document.getElementById("excusa").innerHTML =
     who[who1] + action[action1] + what[what1] + when[when1];
 }
+document.getElementById("btn").addEventListener("click", excusa);

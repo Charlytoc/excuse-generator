@@ -16,30 +16,13 @@
     <div class="container-fluid text-center">
       <h1 class="mt-5">NO ME LO VAS A CREER, PERO...</h1>
       <h2 class="text-black-50 fs-6">Toca al bebé</h2>
-      <button onclick="excusa()">
+      <button id="btn">
         <img src="./rigo-baby.jpg" />
       </button>
       <p class="alert alert-warning mt-4 fs-1" id="excusa">
         Mi novia me dañó el celular
       </p>
     </div>
-    <script>
-      function excusa() {
-        let who = ["Mi novia ", "Una señora ", "Un motorizado "];
-        let action = ["me dañó ", "se comió ", "me robó "];
-        let what = ["la tarea ", "el teléfono ", "la billetera "];
-        let when = [
-          "en la mañana",
-          "antes de llegar al trabajo",
-          "ayer por la noche"
-        ];
-        let who1 = Math.floor(Math.random() * 3);
-        let action1 = Math.floor(Math.random() * 3);
-        let what1 = Math.floor(Math.random() * 3);
-        let when1 = Math.floor(Math.random() * 3);
-        document.getElementById("excusa").innerHTML =
-          who[who1] + action[action1] + what[what1] + when[when1];
-      }
-    </script>
+    <script src="./app.js"></script>
   </body>
 </html>
