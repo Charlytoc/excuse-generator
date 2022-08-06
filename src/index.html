@@ -14,16 +14,32 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
+      <h1 class="mt-5">NO ME LO VAS A CREER, PERO...</h1>
+      <h2 class="text-black-50 fs-6">Toca al bebé</h2>
+      <button onclick="excusa()">
+        <img src="./rigo-baby.jpg" />
+      </button>
+      <p class="alert alert-warning mt-4 fs-1" id="excusa">
+        Mi novia me dañó el celular
       </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
     </div>
+    <script>
+      function excusa() {
+        let who = ["Mi novia ", "Una señora ", "Un motorizado "];
+        let action = ["me dañó ", "se comió ", "me robó "];
+        let what = ["la tarea ", "el teléfono ", "la billetera "];
+        let when = [
+          "en la mañana",
+          "antes de llegar al trabajo",
+          "ayer por la noche"
+        ];
+        let who1 = Math.floor(Math.random() * 3);
+        let action1 = Math.floor(Math.random() * 3);
+        let what1 = Math.floor(Math.random() * 3);
+        let when1 = Math.floor(Math.random() * 3);
+        document.getElementById("excusa").innerHTML =
+          who[who1] + action[action1] + what[what1] + when[when1];
+      }
+    </script>
   </body>
 </html>
